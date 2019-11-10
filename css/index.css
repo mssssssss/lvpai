@@ -1,0 +1,364 @@
+  /* 首部的导航栏 */
+  .header {
+    width: 1349px;
+    height: 47px;
+    line-height: 47px;
+    background-color: rgb(58, 72, 82);
+}
+
+.nav {
+    width: 88%;
+    margin: 0 auto;
+    color: rgb(195, 199, 201);
+    font-size: 17px;
+    line-height: 47px;
+}
+
+.icon-weizhi {
+    margin-right: 5px;
+    font-size: 17px;
+    color: #fff;
+    float: left;
+}
+
+.fenzhan {
+    margin-right: 5px;
+    float: left;
+}
+
+.place {
+    width: 1000px;
+    float: left;
+    height: 47px;
+    line-height: 47px;
+}
+
+.place a {
+    text-decoration: none;
+    color: rgb(195, 199, 201);
+    font-size: 17px;
+}
+
+.place>li {
+    float: left;
+
+    height: 47px;
+    padding: 0 10px;
+}
+
+.place>li:hover {
+    background-color: rgb(198, 161, 106);
+}
+
+.mobile-version {
+    width: 90px;
+    height: 47px;
+    float: right;
+    margin-right: 15px;
+    background-color: rgb(45, 58, 67);
+}
+
+.mobile-version:hover {
+    background-color: rgb(38, 50, 58);
+}
+
+.icon-shouji {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+/* 首部的分隔栏 */
+.divide {
+    width: 1349px;
+    height: 10px;
+    background-color: rgb(198, 161, 106);
+}
+
+
+/* 第二个导航 */
+.sec-nav {
+    float: left;
+    width: 1349px;
+    background-color: rgb(101, 118, 129);
+    height: 85px;
+    font-size: 17px;
+}
+
+.sec-nav>ul>li {
+    float: left;
+}
+
+.sec-nav>ul>li>ul>li:nth-child(2) {
+    font-size: 10px;
+    color: rgb(197, 201, 193);
+    line-height: 2;
+}
+
+.sec-nav>ul>li>ul {
+    width: 120px;
+    height: 85px;
+    text-align: center;
+    /* background-color: rgb(81, 94, 103); */
+    color: #fff;
+    padding-top: 25px;
+}
+
+.sec-nav>ul>li>ul:hover {
+    background-color: rgb(81, 94, 103);
+}
+
+.sec-nav>ul>li:nth-child(1) {
+    margin-left: 80px;
+}
+
+.sec-nav>ul>li:nth-child(5) {
+    margin-left: 260px;
+}
+
+.logo>img {
+    width: 190px;
+    position: absolute;
+    top: 57px;
+    left: 595px;
+    z-index: 5;
+}
+
+/* 轮播图 */
+.lunbo {
+    width: 1349px;
+    height: 660px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 文字部分 */
+.wenzi {
+    text-align: center;
+}
+
+.theme {
+    font-size: 80px;
+    font-weight: 100;
+    letter-spacing: 3mm;
+    font-family: monospace;
+    color: rgb(160, 160, 160);
+}
+
+.x {
+    position: relative;
+    height: 30px;
+}
+
+.xixian {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(160, 160, 160);
+    position: absolute;
+    top: 50%;
+}
+
+.zhizuo {
+    width: 440px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    font-size: 18px;
+    top: 0%;
+    left: 35%;
+    color: rgb(102, 102, 102);
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.zhizuo:hover {
+    background-color: rgb(138, 151, 159);
+    color: #fff;
+}
+
+.quanqiu {
+    font-size: 50px;
+    font-family: 等线;
+    letter-spacing: 1mm;
+    color: rgb(101, 118, 129);
+    margin: 10px 0;
+}
+
+.quanqiu>span:nth-child(2) {
+    color: rgb(198, 126, 18);
+}
+
+.yinwen {
+    font-size: 11px;
+    line-height: 1.8;
+    color: rgb(153, 153, 153);
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.place-nav {
+    width: 80%;
+    margin: 0 auto;
+    height: 130px;
+}
+
+.place-nav>ul>li {
+    float: left;
+    padding: 7px 13px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 8px;
+    font-size: 16px;
+}
+
+.place-nav>ul>li>a {
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+}
+
+.place-nav>ul>li:hover a {
+    color: rgb(198, 126, 18);
+
+}
+
+.place-nav>ul>li:hover {
+    border: 1px solid rgb(198, 126, 18);
+}
+
+.place-nav-sec {
+    width: 30%;
+    margin: 10px auto;
+}
+
+/* 地点图片 */
+.place-pic {
+    width: 88%;
+    margin: 20px auto;
+}
+
+.place-pic>div {
+    width: 23.5%;
+    float: left;
+    margin-right: 12px;
+}
+
+.place-pic>div>img {
+    width: 100%;
+}
+.place-intro{
+    margin-top: 10px;
+    float: right;
+    margin-bottom: 35px;
+}
+.place-intro>li{
+    width: 200px;
+    color: rgb(182, 170, 170);
+    font-size: 14px;
+    text-align: right;
+}
+.place-intro>li:nth-child(1){               
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+.place-intro>li:nth-child(2){
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.datu{
+    width: 100%;   
+}
+.datu>img{
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 130px;
+}
+/* 底部的tab选卡 */
+.bot-tab-content{
+    margin-top: 50px;
+    width: 100%;
+}
+.bot-tab-content>div{
+    display:none;
+}
+.bot-tab-content>div:nth-child(1){
+    display:block;
+}
+.bot-tab-content img{
+    width: 100%;
+    
+}
+.bot-tab{
+    width: 90%;
+    margin: 0 auto;
+    height: 192px;
+    border-bottom: 1px solid rgb(191, 197, 200);
+    margin-bottom: 20px;
+}
+.bot-tab li{
+    text-align: center;
+    float: left;
+    width:  19%;
+    margin-right: 12px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 3;
+  
+}
+.bot-tab img{
+    width: 100%;
+}
+.bot-tab .selected{
+    border-bottom: 5px solid rgb(255, 204, 0);
+    color: rgb(198, 126, 18);
+    /* transition: all 0.4ms ease-in; */
+}
+/* 微电影 */
+.video-play{
+    width: 100%
+    margin: 0 auto;
+}
+.video-play>video{
+    width: 100%;
+}
+.video-align{
+    width: 90%;
+    margin: 0 auto;
+}
+.video-align img{
+    width: 32.5%;
+    float: left;
+    margin-right:10px;
+}
