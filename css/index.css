@@ -1,3 +1,9 @@
+  /* 主页的样式 */
+  body {
+      background-color: rgb(238, 238, 238) !important;
+  }
+
+  /* top.html的css部分 */
   /* 首部的导航栏 */
   .header {
       width: 1349px;
@@ -34,9 +40,12 @@
   }
 
   .place a {
-      text-decoration: none;
       color: rgb(195, 199, 201);
       font-size: 17px;
+  }
+
+  .place a:hover {
+      text-decoration: none;
   }
 
   .place>li {
@@ -48,6 +57,10 @@
 
   .place>li:hover {
       background-color: rgb(198, 161, 106);
+  }
+
+  .place>li:hover a {
+      color: #fff;
   }
 
   .mobile-version {
@@ -79,13 +92,14 @@
   .sec-nav {
       float: left;
       width: 1349px;
-      background-color: rgb(101, 118, 129);
+      background-color: rgb(65, 100, 131);
       height: 85px;
       font-size: 17px;
   }
 
   .sec-nav>ul>li {
       float: left;
+      cursor: pointer;
   }
 
   .sec-nav>ul>li:hover li:nth-child(1) {
@@ -102,6 +116,7 @@
       font-size: 10px;
       color: rgb(197, 201, 193);
       line-height: 2;
+      font-family: fantasy;
   }
 
   .sec-nav>ul>li>ul {
@@ -111,10 +126,17 @@
       /* background-color: rgb(81, 94, 103); */
       color: #fff;
       padding-top: 25px;
+
   }
 
   .sec-nav>ul>li>ul:hover {
-      background-color: rgb(81, 94, 103);
+      background-color: rgb(52, 80, 105);
+      border-bottom: 2px solid rgb(255, 204, 102);
+  }
+
+  .sec-nav .ss {
+      background-color: rgb(52, 80, 105);
+      border-bottom: 2px solid rgb(255, 204, 102);
   }
 
   .sec-nav>ul>li:nth-child(1) {
@@ -133,7 +155,6 @@
       left: 595px;
       z-index: 5;
   }
-
   .logo>img {
       width: 100%;
   }
@@ -143,9 +164,16 @@
       margin-top: 85px;
       width: 1349px;
       height: 700px;
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      position: relative;
   }
-
+  /* .lunbo:after{
+    content: '';
+    border-left: 674px solid transparent;
+    border-right: 674px solid transparent;
+    border-top: 120px solid #fff;
+    border-bottom: 120px solid transparent;
+    position: absolute;
+  } */
   .swiper-container {
       width: 100%;
       height: 100%;
@@ -176,6 +204,9 @@
       width: 100%;
       height: 100%;
   }
+
+
+
 
   /* 文字部分 */
   .wenzi {
@@ -215,7 +246,7 @@
       top: 0%;
       left: 465px;
       color: rgb(102, 102, 102);
-      background-color: #fff;
+      background-color: rgb(238, 238, 238);
       text-align: center;
       border-radius: 5px;
   }
@@ -229,12 +260,12 @@
       font-size: 50px;
       font-family: 等线;
       letter-spacing: 1mm;
-      color: rgb(101, 118, 129);
+      color: rgb(115, 158, 185);
       margin: 10px 0;
   }
 
   .quanqiu>span:nth-child(2) {
-      color: rgb(198, 126, 18);
+      color: rgb(204, 153, 102);
   }
 
   .yinwen {
@@ -244,6 +275,11 @@
       font-weight: bolder;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
+
+  #top {
+      margin-bottom: 50px;
+  }
+
 
   /* 地方导航 */
   .place-nav {
@@ -291,6 +327,7 @@
       float: left;
       margin-right: 12px;
       position: relative;
+      cursor: pointer;
   }
 
   .place-pic>div:nth-child(4n) {
@@ -317,6 +354,7 @@
       color: #fff;
       display: none;
       height: 205px;
+      pointer-events: none;
   }
 
   .place-pic .orange-cover:after {
@@ -328,6 +366,7 @@
       position: absolute;
       margin-top: -4px;
       margin-left: -143px;
+      pointer-events: none;
   }
 
   .place-pic .orange-cover>.cover-title {
@@ -516,9 +555,12 @@
 
   .lookmore a {
       color: rgb(238, 238, 238);
-      text-decoration: none;
+     
   }
-
+  .lookmore a:hover{
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+  }
   .lookmore>div {
       float: left;
       width: 300px;
@@ -550,8 +592,27 @@
 
   .wei-mess {
       width: 1349px;
-      height: 600px;
-      background-color: rgb(138, 151, 159);
+      height: 800px;
+      background-color: rgb(95, 145, 176);
+      position: relative;
+  }
+
+  /* 手机页面的显示 */
+  .wei-mess .iphone2 {
+      width: 350px;
+      height: 1045px;
+      position: absolute;
+      left: 85px;
+      top: -360px;
+      background: url("../images/iphone.png") no-repeat;
+  }
+
+  /* 评论部分 */
+  .wei-mess .comments {
+      width: 800px;
+      height: 800px;
+      /* background-color: violet; */
+      margin-left: 500px;
   }
 
   /* 新闻资讯 */
@@ -572,9 +633,11 @@
   .news-content {
       width: 1349px;
       height: 580px;
-      background-color: rgb(138, 151, 159);
+      background-color: rgb(95, 145, 176);
+
   }
-  .nav2{
+
+  .nav2 {
       width: 400px;
       height: 40px;
       line-height: 40px;
@@ -584,36 +647,111 @@
       font-size: 18px;
       color: #fff;
   }
-  .nav2>li{
+
+  .nav2>li {
       float: left;
       width: 28%;
       height: 40px;
-      border: 1px solid #ccc;
+      /* border: 1px solid #ccc; */
       margin-right: 20px;
       border-radius: 6px;
   }
-  .nav2>li>a{
+
+  .nav2>.sele {
+      border: 1px solid #ccc;
+  }
+
+  .nav2>li>a {
       color: #fff;
   }
-  .nav2>li>a:hover{
+
+  .nav2>li>a:hover {
       text-decoration: none;
   }
-  .zixun div{
+
+  .zixun>div {
       display: none;
+      position: absolute;
   }
+
+  .zixun>div:nth-of-type(1) {
+      display: block;
+  }
+
   /* .zixun .display{
       display: block;
       transform: translate(-100px,0px);
       transition: all 0.5s ease;
   } */
 
-  .zixun{
-      width: 1100px;
+  .zixun {
+      width: 1160px;
       height: 100%;
-      background-color: blueviolet;
+      background-color: rgb(95, 145, 176);
       margin: 0 auto;
       text-align: center;
   }
+
+  .zixun-content>ul {
+      width: 1160px;
+  }
+
+  .zixun-content>ul>li {
+      width: 272px;
+      height: 380px;
+      float: left;
+      margin-right: 22px;
+      background-color: #fff;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+  }
+
+  .zixun-content>ul>li:nth-last-of-type(1) {
+      margin-right: 0;
+  }
+
+  .zixun-content>ul>li:hover .intro {
+      color: rgb(198, 126, 18);
+  }
+
+  .zixun-content>ul>li:hover .title {
+      background-color: rgb(83, 115, 134);
+  }
+
+  .zixun-content>ul>li>img {
+      width: 100%;
+  }
+
+  .zixun-content>ul>li>.title {
+      width: 100%;
+      height: 35px;
+      background-color: rgb(101, 118, 129);
+      line-height: 35px;
+      color: #fff;
+      font-size: 16px;
+  }
+
+  .zixun-content>ul>li>.time {
+      width: 100%;
+      height: 55px;
+      line-height: 55px;
+      color: rgb(101, 118, 129);
+      font-size: 16px;
+      font-family: cursive;
+  }
+
+  .zixun-content>ul>li>.intro {
+      width: 85%;
+      height: 80px;
+      margin: 0 auto;
+      color: rgb(101, 118, 129);
+      line-height: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /* white-space: nowrap; */
+  }
+
 
   /* 商标品牌 */
   .brand {
@@ -635,81 +773,90 @@
       height: 330px;
       /* background-color: teal; */
   }
-  .brand-details>ul{
+
+  .brand-details>ul {
       width: 1200px;
       margin: 0 auto;
       position: relative;
   }
-  .brand-details>ul>li{
+
+  .brand-details>ul>li {
       text-align: center;
       float: left;
       width: 300px;
-      background-color: #fff;
+      background-color: rgb(238, 238, 238);
       line-height: 2;
       color: rgb(101, 118, 129);
       font-size: 14px;
   }
-  .brand-details>ul>li li:nth-child(1){
+
+  .brand-details>ul>li li:nth-child(1) {
       font-size: 18px;
       color: rgb(51, 51, 51);
   }
-  .brand-details div{
-      width:198px;
+
+  .brand-details div {
+      width: 198px;
       height: 220px;
       margin-left: 50px;
       margin-top: 5px;
       margin-bottom: 10px;
       background-image: url('../images/brand.png');
   }
-  .brand-details .brand-1-1{
-    background-position: 0 0;
-  }
-  .brand-details .brand-1-2{
-    background-position: 0 -220px;
-    display: none;
-  }
-  .brand-details .brand-2-1{
-    background-position:  -194px 0;
-  }
-  .brand-details .brand-2-2{
-    background-position:  -194px -220px;
-    display: none;
-  }
-  .brand-details .brand-3-1{
-    background-position: -394px 0;
-  }
-  .brand-details .brand-3-2{
-    background-position: -394px -220px;
-    display: none;
-  }
-  .brand-details .brand-4-1{
-    background-position: -590px 0;
-  }
-  .brand-details .brand-4-2{
-    background-position: -590px -220px;
-    display: none;
+
+  .brand-details .brand-1-1 {
+      background-position: 0 0;
   }
 
-  .brand-details>ul>li:hover li:nth-child(1){
-    color: rgb(198, 126, 18);
-  }
-  /* .brand-details>ul>li:hover div{
-    background-position: 0 -220px;
-  } */
-  /* 倒三角 */
-  .brand-details:after {
-      content: "";
-      /* 高度为80px */
-      border-bottom: 90px solid transparent;
-      border-top: 90px solid #fff;
-      /* 宽度为674*2=1348px */
-      border-right: 674px solid transparent;
-      border-left: 674px solid transparent;
-      position: absolute;
-      margin-top: 330px;
-      margin-left: -1275px;
+  .brand-details .brand-1-2 {
+      background-position: 0 -220px;
+      display: none;
   }
 
+  .brand-details .brand-2-1 {
+      background-position: -194px 0;
+  }
+
+  .brand-details .brand-2-2 {
+      background-position: -194px -220px;
+      display: none;
+  }
+
+  .brand-details .brand-3-1 {
+      background-position: -394px 0;
+  }
+
+  .brand-details .brand-3-2 {
+      background-position: -394px -220px;
+      display: none;
+  }
+
+  .brand-details .brand-4-1 {
+      background-position: -590px 0;
+  }
+
+  .brand-details .brand-4-2 {
+      background-position: -590px -220px;
+      display: none;
+  }
+
+  .brand-details>ul>li:hover li:nth-child(1) {
+      color: rgb(198, 126, 18);
+  }
+
+  #bot:before{
+    content: "";
+    /* 高度为90px */
+    border-bottom: 90px solid transparent;
+    border-top: 90px solid rgb(238, 238, 238);
+    /* 宽度为674*2=1348px */
+    border-right: 674px solid transparent;
+    border-left: 674px solid transparent;
+    position: absolute;
+    /* margin-top: 92px;
+    margin-left: -360px; */
+}
+  /* bot.html的css部分 */
   .gongzhonghao {
       width: 1349px;
       height: 400px;
@@ -775,15 +922,15 @@
 
   .global {
       width: 1349px;
-      height: 620px;
-      background-color: rgb(138, 151, 159);
+      height: 730px;
+      background-color: rgb(95, 145, 176);
       z-index: 5;
   }
 
   /* 正三角 */
   .global:before {
       content: "";
-      border-bottom: 90px solid rgb(138, 151, 159);
+      border-bottom: 90px solid rgb(95, 145, 176);
       border-top: 90px solid transparent;
       /* 宽度为674*2=1348px */
       border-right: 674px solid transparent;
@@ -811,20 +958,123 @@
   }
 
   .global .map {
-      width: 1349px;
-      margin-top: 60px;
+      width: 1580px;
+      margin-top: 50px;
+      background: url('../images/map.png') no-repeat;
+      height: 630px;
+      margin-left: -250px;
+
   }
 
-  .global .map img {
-      width: 100%;
-      height: 500px;
+  .map>ul {
+      position: relative;
+      margin-left: 370px;
+  }
+
+  .map li {
+      float: left;
+      padding: 1px 2px;
+      font-size: 14px;
+      margin: 4px;
+      border-radius: 5px;
+      position: absolute;
+  }
+
+  .map li:hover {
+      background-color: rgb(255, 255, 153);
+      cursor: pointer;
+  }
+
+  .map li:hover a {
+      color: rgb(51, 51, 51);
+  }
+
+  .map a {
+      color: #fff;
+  }
+
+  .map a:hover {
+      text-decoration: none;
+  }
+
+  .map li:nth-of-type(1) {
+      top: 305px;
+      left: 25px;
+  }
+
+  .map li:nth-of-type(2) {
+      top: 437px;
+      left: 35px;
+  }
+
+  .map li:nth-of-type(3) {
+      top: 197px;
+      left: 565px;
+  }
+
+  .map li:nth-of-type(4) {
+      top: 376px;
+      left: 778px;
+  }
+
+  .map li:nth-of-type(5) {
+      top: 283px;
+      left: 842px;
+  }
+
+  .map li:nth-of-type(6) {
+      top: 325px;
+      left: 842px;
+  }
+
+  .map li:nth-of-type(7) {
+      top: 350px;
+      left: 832px;
+  }
+
+  .map li:nth-of-type(8) {
+      top: 245px;
+      left: 933px;
+  }
+
+  .map li:nth-of-type(9) {
+      top: 285px;
+      left: 959px;
+  }
+
+  .map li:nth-of-type(10) {
+      top: 307px;
+      left: 933px;
+  }
+
+  .map li:nth-of-type(11) {
+      top: 398px;
+      left: 936px;
+  }
+
+  .map li:nth-of-type(12) {
+      top: 242px;
+      left: 1040px;
+  }
+
+  .map li:nth-of-type(13) {
+      top: 294px;
+      left: 1020px;
+  }
+
+  .same-nav>.sec-nav {
+      background-color: rgb(76, 119, 146);
+      border-bottom: 1px solid rgb(94, 133, 157);
+  }
+  .same-nav>.sec-nav>ul>li:nth-child(5){
+      margin-left: 0;
   }
 
   /* 联系方式 */
   .connect {
       width: 1349px;
       height: 360px;
-      background-color: rgb(101, 118, 129);
+      background-color: rgb(76, 119, 146);
       /* position: relative; */
   }
 
@@ -832,7 +1082,7 @@
       content: "";
       /* 高度为80px */
       border-bottom: 87px solid transparent;
-      border-top: 87px solid rgb(101, 118, 129);
+      border-top: 87px solid rgb(76, 119, 146);
       /* 宽度为674*2=1348px */
       border-right: 674px solid transparent;
       border-left: 674px solid transparent;
@@ -845,7 +1095,7 @@
       z-index: 5;
       width: 810px;
       height: 245px;
-      background-color: rgb(77, 92, 102);
+      background-color: rgb(59, 99, 124);
       margin-left: 267px;
       margin-top: -274px;
   }
@@ -854,7 +1104,7 @@
       z-index: 5;
       content: "";
       border-bottom: 50px solid transparent;
-      border-top: 50px solid rgb(77, 92, 102);
+      border-top: 50px solid rgb(59, 99, 124);
       border-right: 405px solid transparent;
       border-left: 405px solid transparent;
       position: absolute;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pictureViewer.css">
+    <script src="js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+    <!-- <div class="main-content"> -->
+        <div class="image-lists">
+            <div class="cover"><img src="images/i1.jpg" alt=""></div>
+            <div class="cover"><img src="images/i2.jpg" alt=""></div>
+            <div class="cover"><img src="images/i3.jpg" alt=""></div>
+            <div class="cover"><img src="images/i4.jpg" alt=""></div>
+            <div class="cover"><img src="images/i5.jpg" alt=""></div>
+        </div>
+    <!-- </div> -->
+
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/pictureViewer.js"></script>
+    <script>
+        $(function () {
+            $('.image-lists').on('click', '.cover', function () {
+                console.log("aaaaaa");
+                
+                var this_ = $(this);
+                var images = this_.parents('.image-lists').find('.cover');
+                var imagesArr = new Array();
+                $.each(images, function (i, image) {
+                    imagesArr.push($(image).children('img').attr('src'));
+                });
+                $.pictureViewer({
+                    images: imagesArr, //需要查看的图片，数据类型为数组
+                    initImageIndex: this_.index() + 1, //初始查看第几张图片，默认1
+                    scrollSwitch: true //是否使用鼠标滚轮切换图片，默认false
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

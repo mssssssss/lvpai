@@ -1,0 +1,248 @@
+/* 新闻页面的样式 */
+.nnn {
+    width: 1190px;
+    height: 15910px;
+    margin-left: 80px;
+    margin-top: -15px;
+}
+
+.nnn-1 {
+    width: 200px;
+    height: 400px;
+    margin-right: 40px;
+    float: left;
+    text-align: right;
+}
+
+.nnn-1>ul>li:nth-child(1) a {
+    font-size: 30px;
+    color: rgb(203, 126, 18);
+    font-family: cursive;
+}
+.nnn-1>ul>li:nth-child(1) a:hover{
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+}
+.nnn-1 .l {
+    height: 150px;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.nnn-1 .l .e{
+    background-color: rgb(65, 100, 131);
+}
+.nnn-1 .l .e a{
+    color: #fff;
+}
+.nnn-1 .l .e span{
+    color: #fff;
+}
+.nnn-1 .l ul {
+    float: right;
+    width: 180px;
+    margin-top: 13px;
+    margin-bottom: 28px;
+}
+
+.nnn-1 .l ul>li {
+    height: 28px;
+    line-height: 28px;
+    width: 100%;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    padding-right: 15px;
+}
+.nnn-1 .l ul>li a{
+    color: rgb(51, 51, 51);
+}
+.nnn-1 .l ul>li a:hover{
+    text-decoration: none;
+}
+.nnn-1 .l ul>li a>span{
+    color: rgb(102, 102, 102);
+
+}
+.nnn-1 .l ul>li:hover{
+    background-color: rgb(65, 100, 131);
+}
+.nnn-1 .l ul>li:hover a{
+    color:#fff;
+}
+.nnn-1 .l ul>li:hover span{
+    color:#fff;
+}
+.nnn-1 .hotline{
+    line-height: 1.8;
+    color:#000;
+    margin-bottom: 20px;
+}
+.nnn-1 .hotline li:nth-child(1){
+    color: rgb(102, 102, 102);
+}
+.nnn-1 .hotline span{
+    color: rgb(31, 10, 0);
+    font-size: 18px;
+}
+.nnn-1 .qq{
+    display: block;
+    width: 100%;
+    height: 70px;
+    margin-top: 7px;
+}
+.nnn-1 .qq div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(214, 214, 214);
+}
+.nnn-1 .qq img{
+    width: 100%;
+}
+.nnn-1 .qq li{
+    float: right;
+    text-align: center;
+    margin-right: 8px;
+    cursor: pointer;
+    width: 30px;
+}
+.nnn-1 .qq>ul>li:nth-child(1){
+    margin-right: 0;
+}
+.nnn-1 .qq+li+li{
+    font-weight: bold;
+    margin-top: 5px;
+}
+.nnn-1 .qq a{
+    color: rgb(51, 155, 56);
+}
+.nnn-1 .qq a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(51, 153, 51);
+
+}
+.nnn-2 {
+    width: 920px;
+    height: 15869px;
+    float: left;
+    background-color: #fff;
+    border-radius: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nnn-2 .t {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 55px;
+    line-height: 1.6;
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+}
+
+.nnn-2 .t-1 {
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+}
+
+.nnn-2 .t a {
+    color: rgb(153, 153, 153);
+    margin-right: 10px;
+}
+
+.nnn-2 .t a:nth-child(2) {
+    color: rgb(219, 140, 47);
+}
+
+.nnn-2 .t a:hover {
+    color: rgb(255, 153, 63);
+}
+
+.nnn-2 .c {
+    line-height: 1.6;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+}
+
+.nnn-2 .c .c1 {
+    width: 581px;
+    margin-left: 170px;
+    margin-bottom: 20px;
+}
+
+.nnn-2 .c img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.nnn-2 .c .zy_media {
+    margin-bottom: 10px !important;
+}
+
+.nnn-2 .mx {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 2;
+}
+
+.nnn-2 .la {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+}
+
+.nnn-2 .la div:nth-child(1),
+.nnn-2 .p div:nth-child(1) {
+    float: left;
+    padding-left: 12px;
+}
+
+.nnn-2 .la div:nth-child(2),
+.nnn-2 .p div:nth-child(2) {
+    float: right;
+}
+
+.nnn-2 .la div:nth-child(2) a {
+    color: rgb(51, 51, 51);
+}
+
+.nnn-2 .la div:nth-child(2) a:hover {
+    color: rgb(198, 126, 18);
+    text-decoration: none;
+}
+
+.nnn-2 .p {
+    height: 32px;
+    line-height: 32px;
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+    border-top: 1px solid rgb(244, 244, 244);
+    border-bottom: 1px solid rgb(244, 244, 244);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.nnn-2 .p a {
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+}
+
+.nnn-2 .p a:hover {
+    color: rgb(198, 126, 18);
+    text-decoration: none;
+}
+
+.nnn-2 .p+div {
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px dashed rgb(230, 230, 230);
+}
+
+.nnn-2 #com {
+    margin-left: -220px;
+    margin-top: 60px;
+}

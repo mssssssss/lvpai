@@ -1,0 +1,362 @@
+/* 详细页面的样式 */
+
+/* 预先设定 选中全球样片 首页不选中 */
+.divide+.sec-nav>ul>li:nth-child(1)>ul {
+    background-color: rgb(65, 100, 131);
+    border-bottom: none;
+}
+
+.divide+.sec-nav>ul>li:nth-child(6)>ul {
+    background-color: rgb(52, 80, 105);
+    border-bottom: 2px solid rgb(255, 204, 102);
+}
+
+/* 地方导航部分 */
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.place-nav {
+    width: 860px !important;
+    margin: 40px 230px !important;
+    height: 130px;
+}
+
+.place-nav .act {
+    background-color: rgb(207, 169, 114);
+    border: none;
+}
+
+.place-nav .act a {
+    color: #fff;
+}
+
+/* 图片基本信息 */
+.show {
+    width: 1180px;
+    height: 270px;
+    margin-left: 85px;
+    margin-top: -70px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.show>div {
+    float: left;
+}
+
+.show>div:nth-child(1) {
+    width: 160px;
+    height: 240px;
+    margin-right: 15px;
+}
+
+.show>div:nth-child(1) img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.show>div:nth-child(2) {
+    width: 850px;
+    height: 100%;
+    line-height: 2;
+    font-size: 12px;
+}
+
+.show>div:nth-child(2) li:nth-child(1) {
+    font-size: 22px;
+    color: rgb(196, 98, 0);
+    margin-top: -10px;
+}
+
+.show>div:nth-child(2) a {
+    color: rgb(196, 98, 0);
+    margin-left: 7px;
+}
+
+.show>div:nth-child(2) a:hover {
+    color: rgb(255, 153, 0);
+}
+
+.show .nextPage {
+    width: 50px;
+    margin-top: 20px;
+    color: rgb(177, 177, 177);
+}
+
+.show .icon-youjiantou {
+    font-size: 40px;
+}
+
+.show .nextPage:hover {
+    color: rgb(147, 147, 147);
+    cursor: pointer;
+}
+
+.pic-show {
+    width: 1180px;
+    height: 630px;
+    margin-top: 30px;
+    margin-left: 85px;
+    border-bottom: 1px solid #ccc;
+}
+
+.pic-show>ul>li {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 130px;
+
+}
+
+.pic-show>ul>li li {
+    float: left;
+    width: 130px;
+    margin-right: 20px;
+}
+
+.pic-show>ul>li li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.pic-show>ul>li li>img {
+    object-fit: cover;
+    /*  css3新属性 能同时指定图片的高度和高度 而不发生变形 */
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+}
+
+.pic-show>ul>li li {
+    position: relative;
+}
+
+.pic-show .dd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 237, 238, 0.363);
+    border-radius: 8px;
+    pointer-events: none;
+    display: none;
+}
+
+/* 文字介绍 */
+.i {
+    height: 240px;
+    text-align: center;
+    line-height: 2.3;
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+/* 可能喜欢 */
+.maylove {
+    width: 1180px;
+    height: 295px;
+    margin-left: 85px;
+    background-color: #fff;
+}
+
+.maylove>div:nth-child(1) {
+    height: 35px;
+    line-height: 35px;
+    background-color: rgb(233, 235, 239);
+    padding-left: 15px;
+    color: rgb(153, 153, 153);
+}
+
+.maylove>div:nth-child(1) a {
+    color: rgb(153, 153, 153);
+    margin-right: 10px;
+}
+
+.maylove>div:nth-child(1) a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.maylove>div:nth-child(2) {
+    height: 32px;
+    line-height: 32px;
+    background-color: rgb(251, 251, 251);
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+    border: 1px solid rgb(233, 235, 239);
+}
+
+.maylove>div:nth-child(2) li:nth-child(1) {
+    float: left;
+    margin-left: 15px;
+}
+
+.maylove>div:nth-child(2) li:nth-child(2) {
+    margin-left: 1050px;
+}
+
+.maylove>div:nth-child(2) li:nth-child(2) a {
+    color: rgb(51, 51, 51);
+}
+
+.maylove>div:nth-child(2) li:nth-child(2) a:hover {
+    color: rgb(213, 142, 18);
+    text-decoration: none;
+}
+
+.maylove>div:nth-child(3) {
+    border: 1px solid rgb(233, 235, 239);
+    border-top: none;
+    height: 230px;
+}
+
+.m {
+    width: 97%;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.m>ul>li:nth-child(1) {
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px solid rgb(233, 235, 239);
+    font-weight: bold;
+}
+
+.im {
+    margin-left: 7px;
+}
+
+.im>li {
+    width: 50px;
+    height: 60px;
+    margin-right: 25px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.im>li>img {
+    width: 100%;
+}
+
+.im>li .im-wen {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    line-height: 10px;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+
+.im .d-t {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 510px;
+    background-color: #fff;
+    z-index: 7;
+    display: none;
+    padding-left: 10px;
+    padding-top: 8px;
+    pointer-events: none;
+    color: rgb(71, 93, 147);
+}
+
+.im .d-t img {
+    width: 310px;
+    background-color: rgb(195, 140, 50);
+}
+
+.dianping {
+    width: 400px;
+    height: 100px;
+    margin-left: 115px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.add-comment {
+    width: 700px;
+    height: 240px;
+    margin-left: 360px;
+    position: relative;
+}
+
+/* .add-comment:after {
+    content: "";
+ 
+    border-bottom: 90px solid transparent;
+    border-top: 90px solid rgb(238, 238, 238);
+
+    border-right: 674px solid transparent;
+    border-left: 674px solid transparent;
+    position: absolute;
+    margin-top: 92px;
+    margin-left: -360px;
+} */
+
+.add-comment li:nth-child(1) input {
+    border: none;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-right: 25px;
+    color: rgb(0, 153, 255);
+
+}
+
+.add-comment li:nth-child(2) {
+    margin-top: 10px;
+    position: relative;
+}
+
+.add-comment li:nth-child(2) textarea {
+    width: 530px;
+    height: 100px;
+    border: none;
+    border: 1px solid rgb(216, 223, 229);
+    float: left;
+    color: rgb(0, 153, 255);
+
+}
+
+.add-comment li:nth-child(2) img {
+    position: absolute;
+    left: 255px;
+    top: 36px;
+}
+
+.add-comment li:nth-child(2) button {
+    width: 104px;
+    height: 104px;
+    margin-left: 7px;
+    border: none;
+    border: 1px solid rgb(195, 140, 50);
+    border-radius: 4px;
+    background-color: rgb(215, 175, 122);
+    color: #fff;
+    font-size: 18px;
+}
+
+.add-comment li:nth-child(2) button:hover {
+    background-color: rgb(225, 188, 106);
+}
+
+#bot:before {
+    content: "";
+    /* 高度为90px */
+    border-bottom: 90px solid transparent;
+    border-top: 90px solid rgb(238, 238, 238);
+    /* 宽度为674*2=1348px */
+    border-right: 674px solid transparent;
+    border-left: 674px solid transparent;
+    position: absolute;
+    /* margin-top: 92px;
+    margin-left: -360px; */
+}

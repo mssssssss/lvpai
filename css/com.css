@@ -1,0 +1,159 @@
+/* 微博评论部分样式 */
+.wrapper {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(95, 145, 176) !important;
+}
+
+.panel._active {
+  z-index: 10;
+}
+
+.trans-layer,
+.section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(95, 145, 176);
+}
+
+/* ._active .trans-layer {
+  transform: translateY(0) skew(0) rotate(0) scale(2);
+  transition-delay: 0ms;
+} */
+
+.section {
+  transform: translateY(-100%);
+  transition: all 500ms ease-in-out;
+}
+
+._active .section {
+  transform: translateY(0);
+  transition: all 500ms ease-in-out;
+  /* transition-delay: 500ms; */
+}
+
+.section-content {
+  width: 100%;
+
+}
+
+.section-com>li {
+  width: 92%;
+  height: 160px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+/* 头像 */
+.section-com>li>div:nth-child(1) {
+  width: 130px;
+  height: 130px;
+
+  float: left;
+  position: relative;
+  
+}
+
+.section-com div img:nth-child(1) {
+  border-radius: 100%;
+  width: 100%;
+  border: 2px solid rgb(217, 217, 217);
+  
+}
+.section-com div img:nth-child(3) {
+  position: absolute;
+  top:  27px;
+  left: 25px;
+  width: 85px;
+  z-index: 5;
+  display: none;
+}
+.section-com div .cov{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(153, 153, 153);
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  border-radius: 100%;
+  display: none;
+}
+/* 消息框 */
+.section-com>li .send {
+  position: relative;
+  width: 560px;
+  height: 150px;
+  background: rgb(76, 119, 146);
+  border-radius: 10px;
+  margin-left: 160px;
+}
+
+.section-com>li .send:hover .con{
+  color: rgb(255, 255, 102);
+}
+.section-com>li .arrow {
+  position: absolute;
+  top: 20px;
+  right: 560px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 13px;
+  border-color: transparent rgb(76, 119, 146) transparent transparent;
+}
+.section-com>li .head{
+  line-height: 2;
+  color:rgb(255, 255, 102);
+  font-size: 18px;
+  margin-left: 30px;
+  padding-top: 20px;
+}
+.section-com>li .con{
+  color: #fff;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 25px;
+  margin-right: 20px;
+  line-height: 2;
+}
+
+.nav-dots {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 40px;
+}
+
+.nav-dot {
+  width: 5px;
+  height: 5px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.nav-dot.active {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid rgb(217, 229, 42);
+  background-color: rgb(95, 145, 176);
+}
